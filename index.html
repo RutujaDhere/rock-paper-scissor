@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Sissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                <span>Rock</span>
+                <span>Paper</span>
+                <span>Sissors</span>
+            </h1>
+            <div class="score">
+                <div class="score-container">  
+                    <h4>Score</h4>   
+                    <p id="score">0</p>
+                 </div>
+            </div>
+        </header>
+        <main id="main">
+            <button class="btn-circle btn-rock pick" data-choice="rock">
+                <span class="wrapper">
+                    <img id="img" src="C:\Users\Rutuja\Desktop\JavaScript Projects\Rock-Paper-Sissior\icon-rock.png"
+                    alt="hand-rock">
+                </span>
+            </button>
+                
+            <button class="btn-circle btn-paper pick" data-choice="paper">
+                <span class="wrapper">
+                    <img id="img" src="C:\Users\Rutuja\Desktop\JavaScript Projects\Rock-Paper-Sissior\icon-paper.png" 
+                    alt="hand-paper">
+                </span>
+            </button>
+            <button class="btn-circle btn-sissors pick" data-choice="sissors">
+                <span class="wrapper">
+                    <img id="img" src="C:\Users\Rutuja\Desktop\JavaScript Projects\Rock-Paper-Sissior\icon-sissors.png" 
+                    alt="hand-scissors"/>
+                </span>
+            </button>
+        </main>
+
+        <button class="btn-rules">Rules</button>
+    </div>
+
+
+    <div class="selection" id="selection">
+        <div>
+            <h2>You picked</h2>
+            <button id="user-select" class="btn-circle btn-sissors">
+                <span class="wrapper">
+                    <img id="img" src="C:\Users\Rutuja\Desktop\JavaScript Projects\Rock-Paper-Sissior\icon-sissors.png" 
+                    alt="hand-scissors"/>
+                </span>
+            </button>
+        </div>
+        <div>
+            <p class="big-text">You <span id="win">Win</span></p>
+            <buttion class="btn" id="reset">Play Again</buttion>
+        </div>
+        <div>
+            <h2>Computer Picked</h2>
+            <button id="computer-select" class="btn-circle btn-sissors">
+                <span class="wrapper">
+                    <img id="img" src="C:\Users\Rutuja\Desktop\JavaScript Projects\Rock-Paper-Sissior\icon-paper.png" 
+                    alt="hand-scissors"/>
+                </span>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
