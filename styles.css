@@ -154,18 +154,16 @@ main::before {
 }
 .selection{
     display: none;
-    justify-content: space-between;
+    flex-wrap:wrap;
+    justify-content: center;
     align-items: center;
     text-align: center;
 
-    width: 800px;
+    width: 1000px;
     max-width: 100%;
     margin: 0 auto;
 }
-.selection .btn-circle {
-    margin: 50px;
-    transform: scale(1.4);
-}
+
 
 
 .big-text{
@@ -173,4 +171,18 @@ main::before {
     margin: 0 0 30px;
     line-height: 0.8;
     text-transform: uppercase;
+}
+
+
+@media (max-width:900px) {
+    .selection .btn-circle {
+    margin: 50px 20px;
+    transform: scale(1.4);
+}
+    .go-down {
+        order: 1;
+    }
+    .selection{
+        width: 500px;
+    }
 }
